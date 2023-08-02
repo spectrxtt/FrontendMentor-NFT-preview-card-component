@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    --clr-Softblue: hsl(215, 51%, 70%);
+    --clr-Cyan: hsl(178, 100%, 50%);
+    --clr-Verydarkbluemain: hsl(217, 54%, 11%);
+    --clr-Verydarkbluecard: hsl(216, 50%, 16%);
+    --clr-Verydarkblueline: hsl(215, 32%, 27%);
+    --clr-White: hsl(0, 0%, 100%);
+}
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+body{
+    background-color: var(--clr-Verydarkbluemain);
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back{
+    background-color: var(--clr-Verydarkbluecard);
+    width: 250px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+}
+.image{
+    position: relative;
+}
+.mainImage{
+    width: 100%;
+    border-radius: 1rem;
+}
+.image div{
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.image div:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.image div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Name{
+    color: var(--clr-White);
+    cursor: pointer;
+}
+.Name:hover{
+    color: var(--clr-Cyan);
+}
+.desc{
+    color: var(--clr-Softblue);
+    border-bottom: 1px solid var(--clr-Verydarkblueline);
+    line-height: 28px;
+    padding-bottom: 1rem;
+}
+.eth{
+    color: var(--clr-Cyan);
+}
+.ethimg{
+    padding: 0 .5rem;
+}
+ .days{
+     color: var(--clr-Softblue);
+    padding-left: 2.5rem;
+}
+.imgclock{
+    padding-right: .5rem;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: var(--clr-Verydarkblueline);
+    padding-top: 1.5rem;
+}
+.profileimg{
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 1rem;
+    width: 30px;
+}
+.profile span{
+    color: var(--clr-White);
+    padding-left: .5rem;
+}
+.profile span:hover{
+    cursor: pointer;
+    color: var(--clr-Cyan);
+}
